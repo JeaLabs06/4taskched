@@ -4,6 +4,7 @@ import { View, Text, Button, FlatList, StyleSheet, TouchableOpacity } from 'reac
 import { ItemsContext } from '../context/ItemsContext';
 
 const HomeScreen = ({ navigation }) => {
+  
   const { items, toggleItem } = useContext(ItemsContext);
 
   const renderItem = ({ item, index }) => (
@@ -39,6 +40,8 @@ const HomeScreen = ({ navigation }) => {
     </View>
   );
 };
+
+
 
 const styles = StyleSheet.create({
   container: {

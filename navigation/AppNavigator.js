@@ -46,12 +46,12 @@ const AppNavigator = () => {
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: '#1E90FF',
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="Home" component={HomeStackNavigator} />
-        <Tab.Screen name="Items" component={ItemsScreen} />
+        <Tab.Screen name="Home" component={ItemsScreen} />
+        <Tab.Screen name="Items" component={HomeStackNavigator} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
